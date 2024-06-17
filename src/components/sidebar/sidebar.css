@@ -1,0 +1,6 @@
+.sidebar{
+    height: 100%;
+    width: 292px;
+    background: var(--sidebar-grey);
+    float: left;
+}
