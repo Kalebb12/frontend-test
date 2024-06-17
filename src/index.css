@@ -2,6 +2,7 @@
   --sidebar-grey:#F0F4F4;
   --green:#247B7B;
   --red:#990000;
+  --white:#fff;
 }
 
 *{
@@ -10,4 +11,23 @@
   padding:0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   scroll-behavior: smooth;
+  font-weight:400;
+}
+button{
+  cursor: pointer;
+}
+button:active{
+  scale: 0.991;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+a:active{
+  color: initial ;
+}
+.btn{
+    padding: 10px;
+    border-radius: 4px;
+    width: 240px;
 }

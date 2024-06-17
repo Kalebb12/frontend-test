@@ -1,6 +1,85 @@
 .sidebar{
-    height: 100%;
-    width: 292px;
+    height: 800px;
+    width: 310px;
     background: var(--sidebar-grey);
     float: left;
+    padding: 20px;
+}
+.navs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+}
+.logo{
+    display: flex;
+}
+.nav-links{
+    Padding:8px 32px 8px 32px;
+    text-wrap: nowrap;
+    width: 240px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav-links > img{
+    width: 30px;
+    margin-left: 20px;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.logo >.img{
+    width: 150px;
+}
+.logo >img{
+    width: 80px;
+}
+.navs a.active{
+    background-color: var(--white);
+    color: var(--green);
+}
+/* change the color of svg image when link is active  */
+.green-btn{
+    background-color: var(--green);
+    color: var(--white);
+    cursor: pointer;
+    border: none;
+}
+
+.outline-btn{
+    padding:8px 18px ;
+    border-radius: 4px;
+    border: 1px solid var(--green);
+    background-color: transparent;
+}
+
+.navs > .help{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    background-color: var(--white);
+    padding: 30px 40px;
+    margin-top: 30px;
+}
+
+.navs .title{
+    background: linear-gradient(to right,var(--green),purple);
+    background-clip:text;
+    display: inline;
+    color: transparent;
+}
+
+.help .small-text{
+    font-size: 12px;
+    font-weight: 400;
+    color: grey;
 }
