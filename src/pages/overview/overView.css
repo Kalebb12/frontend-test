@@ -1,0 +1,55 @@
+.head{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+    max-width: 1300px;
+    margin: auto;
+}
+.tabs{
+   display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.custom-date ,.custom-date>div{
+    display: flex;
+    align-items: center;
+    text-wrap: nowrap;
+}
+.custom-date {
+    border: 1px solid lightgrey;
+    padding: 8px;
+    gap: 8px;
+    border-radius: 4px;
+}
+.custom-date  > hr{
+    display: block;
+    height: 20px;
+    background-color: lightgrey;
+    color: lightgrey;
+    width: 1px;
+    font-weight:thin;
+}
+.h-btn{
+    padding: 10px 32px;
+    font-weight: 500;
+    color: var(--green);
+    text-wrap: nowrap;
+}
+.header{
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: var(--green);
+
+}
+.hero-img{
+    margin-top: 60px;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.home >p{
+    font-weight: 600;
+}
