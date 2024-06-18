@@ -22,6 +22,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    transition: all 0.3s;
 }
 .nav-links > img{
     width: 30px;
@@ -43,6 +44,9 @@
 .navs a.active{
     background-color: var(--white);
     color: var(--green);
+}
+.navs a:hover{
+    color: rgba(200, 200, 115, 0.742);
 }
 /* change the color of svg image when link is active  */
 .green-btn{
