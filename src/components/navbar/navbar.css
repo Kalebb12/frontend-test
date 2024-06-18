@@ -3,7 +3,8 @@
     align-items: center;
     justify-content: space-between;
     margin: auto;
-    width: 75%;
+    max-width: 1200px;
+    width: 1200;
 }
 .items , .user {
     display: flex;
@@ -43,4 +44,5 @@
 .navbar-section{
     padding: 15px 0;
     border-bottom: 0.5px solid lightgray;
+    padding-left: 20px;
 }

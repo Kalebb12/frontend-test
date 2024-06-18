@@ -15,7 +15,7 @@ const SideBar = () => {
         <button className="btn green-btn">+ New Campaign</button>
 
         <div className="links">
-          <NavLink to="/OverView" className="nav-links">
+          <NavLink to="/" className="nav-links">
             <img src="/ri_dashboard-2-line.svg" alt="" /> Overview
           </NavLink>
           <NavLink to="Campaign" className="nav-links">
