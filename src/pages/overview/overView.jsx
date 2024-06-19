@@ -5,7 +5,7 @@ const OverView = () => {
     return ( 
         <div className="container">
             <div className="head">
-                <span className="header">OverView</span>
+                <span className="header">Overview</span>
                 <div className="tabs">
                     <div className="custom-date">
                         <div style={{gap:10}}>

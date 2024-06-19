@@ -1,0 +1,57 @@
+.content{
+    padding: 20px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1200px;
+    width: 1200;
+}
+.input-section > .input-field{
+    width: 200px;
+    height: 37px;
+}
+.filter-section{
+    display: flex;
+    justify-content: space-between;
+}
+.filter-section > div{
+    display:flex;
+    align-items: center;
+}
+.input-section{
+    gap: 20px;
+}
+.btn-section{
+    gap: 10px;
+    text-wrap: nowrap;
+}
+.input-section > .search-field{
+    background: url(../../../public/fluent--search-12-filled.svg) no-repeat;
+    background-position:220px 10px ;
+    padding-right: 25px;
+    padding-left: 15px;
+}
+
+.input-section > .filter-field{
+    background: url(../../../public/mdi_chevron-down.svg) no-repeat;
+    background-position:215px 6px ;
+}
+
+.campaign-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--sidebar-grey);
+    padding: 12px 10px;
+}
+
+.campaign-nav >span{
+    font-weight: 500;
+    font-size: 13px;
+}
+@media (max-width:1100px) {
+    .input-section{
+        flex-direction: column;
+        gap: 0;
+    }
+}

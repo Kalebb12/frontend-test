@@ -1,0 +1,28 @@
+.data-item{
+    display: flex;
+    align-items: center;
+    padding: 12px 10px;
+    gap: 20px;
+    border-bottom: 0.5px solid var(--sidebar-grey);
+}
+
+.data-item > .span2{
+    text-wrap: nowrap;
+    width: 220px;
+}
+.data-item >.span1{
+    width: 180px;
+}
+.data-item >.span3{
+    width: 82px;
+    text-wrap: nowrap;
+    overflow: hidden;
+    min-width: 82px;
+}
+.data-item > .red,.green{
+    width: 280px;
+    text-align: center;
+}
+.span5{
+    text-wrap: nowrap;
+}

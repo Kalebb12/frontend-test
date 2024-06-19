@@ -3,7 +3,7 @@ const Navbar = () => {
     return ( 
         <section className="navbar-section">
             <div className="navbar">
-                <input type="text" placeholder="search for anything..." />
+                <input type="text" className="input-field" placeholder="search for anything..." />
 
                 <div className="items">
                     <div className="notification">
