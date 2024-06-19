@@ -53,7 +53,7 @@ const [loading ,setLoading]=  useState(false)
 
         <div className="data-items">
           {data ? (
-            data.map((campaign,index) => {
+            data.splice(0,10).map((campaign,index) => {
               return <CampaignItem key={campaign.id} obj={campaign} index={index+1} />;
             })
           ) : (
