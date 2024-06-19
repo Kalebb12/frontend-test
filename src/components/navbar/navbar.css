@@ -3,9 +3,7 @@
     align-items: center;
     justify-content: space-between;
     margin: auto;
-    max-width: 1200px;
-    width: 1200;
-    padding:0 100px ;
+   padding-left: 60px;
 }
 .items , .user {
     display: flex;
@@ -17,7 +15,7 @@
     display: flex;
     align-items: center;
 }
-.navbar > input{
+.input-field{
     padding: 12px 10px;
     width: 391px;
     border-radius: 4px;

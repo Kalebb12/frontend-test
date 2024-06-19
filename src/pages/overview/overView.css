@@ -1,9 +1,10 @@
 .head{
     display: flex;
     justify-content: space-between;
-    padding: 20px 100px;
+    padding: 20px 60px;
     max-width: 1300px;
     margin: auto;
+    gap: 20px;
 }
 .tabs{
    display: flex;
