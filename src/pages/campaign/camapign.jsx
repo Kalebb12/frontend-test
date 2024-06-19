@@ -51,7 +51,7 @@ const Campaign = () => {
         </div>
 
         <div className="data-items">
-          {data && data.length > 0 ? (
+          {data ? (
             data.map((campaign,index) => {
               return <CampaignItem key={campaign.id} obj={campaign} index={index+1} />;
             })
