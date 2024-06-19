@@ -1,4 +1,7 @@
 import "./navbar.css"
+import notification from "/ic_outline-notifications.svg"
+import user from "/Ellipse 1.svg"
+import arrow from "/mdi_chevron-down.svg"
 const Navbar = () => {
     return ( 
         <section className="navbar-section">
@@ -7,13 +10,13 @@ const Navbar = () => {
 
                 <div className="items">
                     <div className="notification">
-                        <img src="/ic_outline-notifications.svg" alt="notification" />
+                        <img src={notification} alt="notification" />
                     </div>
                     <div className="user">
-                        <img src="/Ellipse 1.svg" alt="user" />
+                        <img src={user} alt="user" />
                         <div className="info">
                             <p className="user-name">BigTech</p>
-                            <img src="/mdi_chevron-down.svg" alt="arrow" />
+                            <img src={arrow} alt="arrow" />
                         </div>
                     </div>
                 </div>

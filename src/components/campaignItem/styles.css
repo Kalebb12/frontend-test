@@ -25,4 +25,6 @@
 }
 .span5{
     text-wrap: nowrap;
+    display: flex;
+    gap:5px;
 }

@@ -16,9 +16,10 @@ const Campaign = () => {
       .then((data) => {
         setData(data);
         setNum(data.length)
+        setLoading(true)
       });
   }, []);
-
+const [loading ,setLoading]=  useState(false)
   return (
     <div className="container">
       <div className="content">
@@ -51,8 +52,8 @@ const Campaign = () => {
         </div>
 
         <div className="data-items">
-          {data && data.length > 0 ? (
-            data.map((campaign,index) => {
+          {loading== true ? (
+            data.slice(0,10).map((campaign,index) => {
               return <CampaignItem key={campaign.id} obj={campaign} index={index+1} />;
             })
           ) : (
@@ -61,9 +62,9 @@ const Campaign = () => {
         </div>
           <div style={{display:"flex",justifyContent:"space-between",paddingRight:20}}>
               <Stack spacing={2}>
-                <Pagination count={10} color="primary" />
+                <Pagination count={4} color="primary" />
               </Stack>
-            <p style={{fontWeight:500}}>Showing {num} of 40 results</p>
+            <p style={{fontWeight:500}}>Showing {num >10 ?"10":num} of 40 results</p>
           </div>
       </div>
     </div>

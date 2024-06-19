@@ -1,5 +1,6 @@
 import { BiDownArrow, BiExport } from "react-icons/bi";
 import { SlCalender } from "react-icons/sl";
+import hero from "/empty-RBIL0twm1B.svg"
 import "./overView.css"
 const OverView = () => {
     return ( 
@@ -22,7 +23,7 @@ const OverView = () => {
                 </div>
             </div>
             <div className="home">
-                <img src="/empty-RBIL0twm1B.svg" className="hero-img" alt="" />
+                <img src={hero} className="hero-img" alt="" />
                 <p>No activity yet, create a new campaign to get started</p>
                 <button className="btn green-btn">+ New Campaign</button>
             </div>
