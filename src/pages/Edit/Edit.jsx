@@ -1,14 +1,14 @@
 import { BiArrowBack } from "react-icons/bi";
-import "./edit.css"
-import { Link, useParams } from "react-router-dom";
+import "./Edit.css"
+import { Link, useParams ,useNavigate} from "react-router-dom";
 import { useEffect,useState } from "react";
-import { FcCancel } from "react-icons/fc";
-import { TiCancel } from "react-icons/ti";
 import { HiXMark } from "react-icons/hi2";
+import ModalD from "../../components/modal/modal-d";
 const Edit = () => {
     const {id} = useParams()
     const [data,setData] = useState([])
     const [Keywords,setKeywords] = useState([])
+    const [modal,setModal]= useState(false)
     useEffect(()=>{
         fetch("https://infinion-test-int-test.azurewebsites.net/api/Campaign/"+id)
         .then(res =>{
@@ -19,8 +19,27 @@ const Edit = () => {
              setKeywords(data.linkedKeywords)
          })
     },[id])
+    const navigate = useNavigate()
+    const handleDelete = (id)=>{
+        fetch("https://infinion-test-int-test.azurewebsites.net/api/Campaign/"+id,{
+            method:"DELETE",
+            headers:{
+                "Content-Type":"application/json"
+            }
+
+        })
+        .then(()=>{
+            setModal(false)
+            navigate("/campaign")
+        })
+    }
+
+
     return ( 
         <div className="container">
+            {
+              modal &&  <ModalD setModal={setModal} name={data.campaignName} id={id} handleDelete={handleDelete}/>
+            }
             <div className="edit-section">
 
             <div className="flex">
@@ -77,7 +96,7 @@ const Edit = () => {
                 </div>
             </div>
             <div className="all-btn">
-                <button className="btn danger-btn">Stop Campaign</button>
+                <button className="btn danger-btn" onClick={()=>{setModal(true)}}>Stop Campaign</button>
                 <button className="btn outline-btn">Edit Information</button>
             </div>
             </div>

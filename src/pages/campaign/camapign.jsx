@@ -5,6 +5,8 @@ import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
 import { useEffect } from "react";
 import CampaignItem from "../../components/campaignItem";
+
+
 const Campaign = () => {
   const [data, setData] = useState([]);
   const [num,setNum] = useState(0)
@@ -22,14 +24,14 @@ const Campaign = () => {
 const [loading ,setLoading]=  useState(false)
   return (
     <div className="container">
-      <div className="content">
-        <span className="header">All Campaigns</span>
-        <div className="filter-section">
-          <div className="btn-section">
-            <button className="outline-btn">all (90)</button>
-            <button className="outline-btn">Inactive (90)</button>
-            <button className="outline-btn">Active (90)</button>
-          </div>
+        <div className="content">
+            <span className="header">All Campaigns</span>
+                <div className="filter-section">
+             <div className="btn-section">
+                       <button className="outline-btn">All (90)</button>
+                         <button className="outline-btn">INACTIVE (90)</button>
+                            <button className="outline-btn">ACTIVE (90)</button>
+            </div>
           <div className="input-section">
             <input
               type="text"
@@ -42,7 +44,7 @@ const [loading ,setLoading]=  useState(false)
               className="input-field filter-field"
             />
           </div>
-        </div>
+    </div>
         <div className="campaign-nav">
           <span>S/N</span>
           <span>Campaign Name</span>
@@ -52,7 +54,7 @@ const [loading ,setLoading]=  useState(false)
         </div>
 
         <div className="data-items">
-          {data ? (
+          {loading== true ? (
             data.splice(0,10).map((campaign,index) => {
               return <CampaignItem key={campaign.id} obj={campaign} index={index+1} />;
             })
@@ -62,9 +64,9 @@ const [loading ,setLoading]=  useState(false)
         </div>
           <div style={{display:"flex",justifyContent:"space-between",paddingRight:20}}>
               <Stack spacing={2}>
-                <Pagination count={4} color="primary" />
+                <Pagination count={10} color="primary" />
               </Stack>
-            <p style={{fontWeight:500}}>Showing {num >10 ?"10":num} of 40 results</p>
+            <p style={{fontWeight:500}}>Showing {num >10?"10":num} of {num} results</p>
           </div>
       </div>
     </div>
