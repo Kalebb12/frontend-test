@@ -1,16 +1,20 @@
+import { Link, useNavigate } from "react-router-dom";
 import "./modal.css"
-const Modal = ({title,des,btns,setModal}) => {
+import successImg from "/success.svg"
+const Modal = ({setModal}) => {
+    const navigate = useNavigate()
+    const Navigate = () => {
+        navigate("/React-Task/")
+    }
     return (
-        <div className="overlay" onClick={()=>setModal(false)}>
+        <div className="overlay" onClick={Navigate}>
 
-        <div className="modal">
+        <div className="f-modal">
             <div className="flex-col">
-                <div className="title">{title}</div>
-                <div className="des">{des}</div>
-                <div className={btns.length > 1?"btns-container" :"btn-container"}>
-                    {btns.map((btn,i)=>{
-                        return <button className="res-btn">{btn}</button>
-                    })}
+                <div className="img"><img src={successImg} alt="" /></div>
+                <div className="des">Campaign successfully created!</div>
+                <div className="btn-container">
+                    <Link to="/Campaign" className="btn green-btn" style={{paddingLeft:"20px",paddingRight:"20px"}}>go back to camaign list</Link>
                 </div>
             </div>
         </div>

@@ -9,6 +9,17 @@
     left: 38%;
     top: 50%;
 }
+.f-modal{
+    background-color: white;
+    width: 503px ;
+    height: 401px;
+    padding: 72px 78px;
+    text-align: center;
+    position: absolute;
+    z-index: 101;
+    left: 38%;
+    top: 30%;
+}
 .modal .title{
     font-weight: 500;
 }

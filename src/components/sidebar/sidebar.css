@@ -88,3 +88,7 @@
     font-weight: 400;
     color: grey;
 }
+
+.link-btn:active{
+    scale: 0.98;
+}

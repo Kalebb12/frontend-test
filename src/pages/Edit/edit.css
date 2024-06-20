@@ -25,10 +25,10 @@
     border-right: 1px solid lightgray;
     padding-right: 5px;
 }
-.edit-section input[type=text],select{
+.edit-section input[type=text],.select{
     padding: 10px;
 }
-.full-width,select{
+.full-width,.select{
     width: 100%;
 }
 .date{

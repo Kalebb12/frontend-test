@@ -83,14 +83,14 @@ const Edit = () => {
                 </div>
                 <div>
                     <span>Want to receive daily digest campaign?</span><br />
-                    <select name="spam" className="spam" id="">
+                    <select name="spam" className="select" id="">
                         <option value="yes">yes</option>
                         <option value="no">No</option>
                     </select>
                 </div>
                 <div>
                     <span>Kindly select the time you want to visit daily digest</span><br />
-                    <select name="" id="">
+                    <select name="" id="" className="select">
                         <option value="">{data.dailyDigest}</option>
                     </select>
                 </div>

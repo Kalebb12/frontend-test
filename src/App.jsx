@@ -6,6 +6,7 @@ import Navbar from './components/navbar/navbar'
 import Campaign from './pages/campaign/camapign'
 import OverView from './pages/overview/overView'
 import Edit from './pages/Edit/Edit'
+import NewCampaign from './pages/new-campaign'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path='/React-Task/' element={<OverView/>}/>
           <Route path='/Campaign' element={<Campaign/>}/>
           <Route path="/edit/:id" element={<Edit/>}/>
+          <Route path="/newCampaign" element={<NewCampaign/>}/>
         </Routes>
         
       </BrowserRouter>

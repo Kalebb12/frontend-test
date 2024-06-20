@@ -1,0 +1,14 @@
+.h{
+    height: 100px;
+    border-width: 1px;
+    border-style: solid;
+    display: flex;
+    align-items: start;
+    padding:5px ;
+    gap: 4px;
+    border-color: var(grey);
+}
+.opt-select{
+    padding: 5px;
+    width: 100px;
+}

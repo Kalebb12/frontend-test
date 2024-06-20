@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./sidebar.css";
 import logo from "/arcticons_google-messages.svg";
 import logo2 from "/Scrutz.svg";
@@ -17,7 +17,7 @@ const SideBar = () => {
           <img src={logo2} className="img" alt="" />
         </div>
 
-        <button className="btn green-btn">+ New Campaign</button>
+        <Link to="newCampaign" style={{textAlign:"center"}} className="btn green-btn link-btn">+ New Campaign</Link>
 
         <div className="links">
           <NavLink to="/React-Task/" className="nav-links">

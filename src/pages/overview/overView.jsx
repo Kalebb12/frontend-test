@@ -1,6 +1,7 @@
 import { BiDownArrow, BiExport } from "react-icons/bi";
 import { SlCalender } from "react-icons/sl";
 import hero from "/empty-RBIL0twm1B.svg"
+import { Link } from "react-router-dom";
 import "./overView.css"
 
 
@@ -28,7 +29,8 @@ const OverView = () => {
             <div className="home">
                 <img src={hero} className="hero-img" alt="" />
                 <p>No activity yet, create a new campaign to get started</p>
-                <button className="btn green-btn">+ New Campaign</button>
+                <Link to="/newCampaign" style={{textAlign:"center"}} className="btn green-btn link-btn">+ New Campaign</Link>
+
             
             </div>
         </div>
