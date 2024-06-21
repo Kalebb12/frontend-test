@@ -49,7 +49,7 @@ const NewCampaign = () => {
                     </select>
                 </div>
                 <div style={{display:"flex",gap:"10px"}}>
-                    <Link to="/React-Task/" className="outline-btn btn" style={{textAlign:"center"}} >cancel</Link>
+                    <Link to="/" className="outline-btn btn" style={{textAlign:"center"}} >cancel</Link>
                     <button className="btn green-btn" onClick={()=>{setModal(true)}}>Create Campaign</button>
                 </div>
             </div>

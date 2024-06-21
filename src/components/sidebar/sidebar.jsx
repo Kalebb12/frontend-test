@@ -2,7 +2,6 @@ import { Link, NavLink } from "react-router-dom";
 import "./sidebar.css";
 import logo from "/arcticons_google-messages.svg";
 import logo2 from "/Scrutz.svg";
-import { TbBulb } from "react-icons/tb";
 import logo1 from"/ri_dashboard-2-line.svg"
 import settings from "/ep_setting.svg"
 import intelligence from "/fluent-mdl2_insights.svg"
@@ -20,7 +19,7 @@ const SideBar = () => {
         <Link to="newCampaign" style={{textAlign:"center"}} className="btn green-btn link-btn">+ New Campaign</Link>
 
         <div className="links">
-          <NavLink to="/React-Task/" className="nav-links">
+          <NavLink to="/" className="nav-links">
             <img src={logo1} alt="" /> Overview
           </NavLink>
           <NavLink to="Campaign" className="nav-links">

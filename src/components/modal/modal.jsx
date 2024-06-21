@@ -4,7 +4,7 @@ import successImg from "/success.svg"
 const Modal = ({setModal}) => {
     const navigate = useNavigate()
     const Navigate = () => {
-        navigate("/React-Task/")
+        navigate("/")
     }
     return (
         <div className="overlay" onClick={Navigate}>

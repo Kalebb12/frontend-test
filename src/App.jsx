@@ -15,7 +15,7 @@ function App() {
         <SideBar/>
         <Navbar/>
         <Routes>
-          <Route path='/React-Task/' element={<OverView/>}/>
+          <Route path='/' element={<OverView/>}/>
           <Route path='/Campaign' element={<Campaign/>}/>
           <Route path="/edit/:id" element={<Edit/>}/>
           <Route path="/newCampaign" element={<NewCampaign/>}/>
